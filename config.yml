@@ -1,0 +1,19 @@
+title: Hello-World
+description: >-
+  Deze Repository is opgemaakt in de geest van een assignment ten name van
+  Sentia, het is de bedoeling om een zo breed mogelijke inzicht te in mijn denk
+  vermogen te beitelen.
+template:
+  repo: hello-world-template
+  name: hello-world
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
